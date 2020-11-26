@@ -10,6 +10,18 @@
 
 import time
 
+def calcManualTeste2(option):
+    segundos = option    
+    segundos_rest = segundos % 86400
+    horas = segundos_rest // 3600
+    segundos_rest = segundos_rest % 3600
+    minutos = segundos_rest // 60
+    segundos_rest = segundos_rest % 60
+    res2 = str(option) + " segundos é igual a " + str(horas) + ":" + str(minutos) + ":" + str(segundos_rest)
+    print(res2)    
+    return res2
+
+
 def main():
     print ("programa para converter um valor em segundos em horas, minutos e segundos.")        
     while True:        
@@ -23,7 +35,11 @@ def main():
                 continue
             else:
                 tmp = time.strftime('%H:%M:%S', time.gmtime(option))
-                print (str(option) + " segundos é igual a " + tmp)                
+                res1 = str(option) + " segundos é igual a " + tmp
+                print (res1)
+                # Segundo tipo de calculo
+                print ("Segundo tipo de calculo!")
+                calcManualTeste2(option)                
         except ValueError:
             print("Input introduzido não é um inteiro válido!")
 
