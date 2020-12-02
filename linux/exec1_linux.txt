@@ -1,0 +1,18 @@
+# 1. How to Run Two or More Terminal Commands at Once in Linux
+$ ls ; pwd ; whoami
+
+
+# 2. Mostrar no terminal Hello e enviar essa palavra para ficheiro
+# https://www.pluralsight.com/blog/it-ops/linux-file-permissions
+$ echo "Hello" > output_hello.txt
+
+
+# 3. Contar as palavras
+$ wc -w < alice30.txt
+
+
+# 4. Guardar processos Linux
+# https://www.tecmint.com/save-top-command-output-to-a-file/
+# In the below example, we’ll redirect the output of top command to output_top.txt file in the current working directory. 
+# The -n argument will be used to send only one snapshot of the command to the mentioned file.
+$ top -b -n 1 > output_top.txt
