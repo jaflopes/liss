@@ -25,8 +25,8 @@ if __name__ == "__main__":
     main()
 
 
-# 1: Raiz quadrada com o método sqrt()
-import math
-num = float(input("Entre com um número (Numero de 0 a 20):"))
-raiz = math.sqrt(num)
-print(f'\nA raiz quadrada de {num} é {raiz}\n')
+# # 1: Raiz quadrada com o método sqrt()
+# import math
+# num = float(input("Entre com um número (Numero de 0 a 20):"))
+# raiz = math.sqrt(num)
+# print(f'\nA raiz quadrada de {num} é {raiz}\n')
